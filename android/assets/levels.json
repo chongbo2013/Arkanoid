@@ -1,0 +1,68 @@
+[{
+	"blocks": [{
+		"color": "green",
+		"x": "3",
+		"y": "4",
+		"repeatX": "2",
+		"repeatY": "0",
+		"quantity": "3"
+	},{
+		"color": "yellow",
+		"x": "10",
+		"y": "2",
+		"repeatX": "0",
+		"repeatY": "0",
+		"quantity": "1"
+	},{
+		"color": "plate",
+		"x": "0",
+		"y": "5",
+		"repeatX": "0",
+		"repeatY": "0",
+		"quantity": "1"
+	}]
+	},{
+	"blocks": [{
+		"color": "plate",
+		"x": "0",
+		"y": "4",
+		"repeatX": "1",
+		"repeatY": "0",
+		"quantity": "13"
+	}, {
+		"color": "red",
+		"x": "0",
+		"y": "5",
+		"repeatX": "1",
+		"repeatY": "0",
+		"quantity": "13"
+	}, {
+		"color": "yellow",
+		"x": "0",
+		"y": "6",
+		"repeatX": "1",
+		"repeatY": "0",
+		"quantity": "13"
+	}, {
+		"color": "blue",
+		"x": "0",
+		"y": "7",
+		"repeatX": "1",
+		"repeatY": "0",
+		"quantity": "13"
+	}, {
+		"color": "violet",
+		"x": "0",
+		"y": "8",
+		"repeatX": "1",
+		"repeatY": "0",
+		"quantity": "13"
+	}, {
+		"color": "green",
+		"x": "0",
+		"y": "9",
+		"repeatX": "1",
+		"repeatY": "0",
+		"quantity": "13"
+	}]
+}]

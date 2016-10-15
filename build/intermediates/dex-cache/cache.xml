@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gson-2.7_6b1296142357054e2a7d95879a5c1fb2db1a3668.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="d7a32e617948618d486127dfd22f3469d1223765">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\instant-run_eb928802f07db8bd3e8197216e74061b81055592.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.3\c45573bf68b55442990936f007e7d6823d259c1f\gdx-backend-android-1.9.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c45573bf68b55442990936f007e7d6823d259c1f">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.3_55d4120557da7cf5202de5a6008d1018be4c013e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.3\924800875b5ce70081021240a1301b60993b62e6\gdx-box2d-1.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="924800875b5ce70081021240a1301b60993b62e6">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.9.3_f1ef80020779de9a1ea5763349397fa926e3110a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.3\924800875b5ce70081021240a1301b60993b62e6\gdx-box2d-1.9.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="924800875b5ce70081021240a1301b60993b62e6">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.9.3_f1ef80020779de9a1ea5763349397fa926e3110a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="72f2b1cea86166b9bc1c09e509938eb4a309a9c3">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\instant-run-bootstrap_774593b1b7c5d11941b8cb224b0806f1b5345f37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.3\1a3775429980a6c8da0cdefb656ad1dabf91d629\gdx-1.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1a3775429980a6c8da0cdefb656ad1dabf91d629">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gdx-1.9.3_e97ed98cec97d2b8f9b3fda360355cec4eadb02b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype\1.9.3\dc44a8c15ce18fec8cdbdbd74bbb8bce3ccbba84\gdx-freetype-1.9.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dc44a8c15ce18fec8cdbdbd74bbb8bce3ccbba84">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gdx-freetype-1.9.3_fda04d7bfced0d6bff7d9de248d0a4a7cc823015.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gson-2.7_6b1296142357054e2a7d95879a5c1fb2db1a3668.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.3\1a3775429980a6c8da0cdefb656ad1dabf91d629\gdx-1.9.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="1a3775429980a6c8da0cdefb656ad1dabf91d629">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gdx-1.9.3_e97ed98cec97d2b8f9b3fda360355cec4eadb02b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.3\c45573bf68b55442990936f007e7d6823d259c1f\gdx-backend-android-1.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c45573bf68b55442990936f007e7d6823d259c1f">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.3_55d4120557da7cf5202de5a6008d1018be4c013e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sebas\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-freetype\1.9.3\dc44a8c15ce18fec8cdbdbd74bbb8bce3ccbba84\gdx-freetype-1.9.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dc44a8c15ce18fec8cdbdbd74bbb8bce3ccbba84">
+        <dex dex="D:\Sincronizado\Android\miJuego\Arkanoid\android\build\intermediates\pre-dexed\debug\gdx-freetype-1.9.3_fda04d7bfced0d6bff7d9de248d0a4a7cc823015.jar" />
+    </item>
+
+</items>
