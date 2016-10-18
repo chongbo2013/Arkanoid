@@ -43,12 +43,12 @@ public class GameContactListener implements ContactListener {
             }
 
             if(userDataA.getClass() == BallActor.class) {
-                if(userDataB.getClass() == BlockActor.class)
+                    if(userDataB.getClass() == BlockActor.class)
                 {
                     ((BlockActor)userDataB).hit(userDataA);
                 }
                 BallActor ball = (BallActor)userDataA;
-                ball.refreshSpeed();
+                ball.hit(userDataB);
             }
         }
     }

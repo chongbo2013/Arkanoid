@@ -3,6 +3,8 @@ package com.arkanoid;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Texture;
 import com.arkanoid.Screens.BaseScreen;
@@ -32,6 +34,13 @@ public class ArkanoidGame extends Game {
         manager.load("player.png", Texture.class);
         manager.load("sprites_player.txt", TextureAtlas.class);
         manager.load("sprites_board.txt", TextureAtlas.class);
+        manager.load("sprites_powerups.txt", TextureAtlas.class);
+
+        manager.load("sounds/release.wav", Sound.class);
+        manager.load("sounds/bounce.wav", Music.class);
+        manager.load("sounds/bounce_golden.wav", Music.class);
+        manager.load("sounds/explotion.wav", Music.class);
+        manager.load("sounds/fire.wav", Music.class);
 
         // Enter the loading screen to load the assets.
         loadingScreen = new LoadingScreen(this);

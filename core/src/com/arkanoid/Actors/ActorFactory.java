@@ -19,7 +19,8 @@
 package com.arkanoid.Actors;
 
 import com.badlogic.gdx.assets.AssetManager;
-import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -28,11 +29,6 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
 
 import java.util.HashMap;
-
-import static com.arkanoid.Screens.CuasiConstantes.BOARD_HEIGHT;
-import static com.arkanoid.Screens.CuasiConstantes.OFFSET_X;
-import static com.arkanoid.Screens.CuasiConstantes.OFFSET_Y;
-import static com.arkanoid.Screens.CuasiConstantes.TILE_SIZE;
 
 /**
  * This class creates entities using Factory Methods.
@@ -96,6 +92,7 @@ public class ActorFactory {
         playerRegions = atlas.findRegions("blue_medium_destoy");
         animations.put(PlayerActor.PlayerAnimations.BLUE_MEDIUM_DESTROY, new Animation(1f/(float)playerRegions.size, playerRegions));
 
+
         return new PlayerActor(world, animations, position);
     }
 
@@ -124,23 +121,36 @@ public class ActorFactory {
 
     public BallActor createBall(World world) {
 
-        return new BallActor(world);
+        Sound release;
+        Music bounce;
+        Music bounce_golden;
+        release = manager.get("sounds/release.wav", Sound.class);
+        bounce = manager.get("sounds/bounce.wav", Music.class);
+        bounce_golden = manager.get("sounds/bounce_golden.wav", Music.class);
+
+        TextureAtlas atlas = manager.get("sprites_player.txt", TextureAtlas.class);
+        TextureRegion texture = atlas.findRegion("ball");
+
+        return new BallActor(world, texture, release, bounce, bounce_golden);
     }
 
     public BlockActor createBlock(World world, Vector2 position, String color) {
 
         TextureAtlas atlas = manager.get("sprites_board.txt", TextureAtlas.class);
         TextureRegion texture = atlas.findRegion("block_" + color);
+        Animation animation = null;
 
         int hardness = 1;
-        if(color.equals("plate"))
-        {
-            hardness = 2;
-        }else if(color.equals("golden"))
-        {
-            hardness = 99;
+        if(color.equals("plate") || color.equals("golden")) {
+            hardness = color.equals("golden") ? 99 : 2;
+            Array<TextureAtlas.AtlasRegion> blockRegions = atlas.findRegions("block_" + color);
+            animation = new Animation(0.5f / (float) blockRegions.size, blockRegions);
         }
 
-        return new BlockActor(world, position, texture, hardness);
+        BlockActor block = new BlockActor(world, position, texture, animation, hardness);
+        if(color.equals("plate") || color.equals("golden")) {
+            block.StartAnimation();
+        }
+        return block;
     }
 }

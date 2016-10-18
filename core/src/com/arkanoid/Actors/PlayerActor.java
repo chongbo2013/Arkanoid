@@ -1,6 +1,7 @@
 package com.arkanoid.Actors;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.math.Vector2;
@@ -114,7 +115,7 @@ public class PlayerActor extends Actor {
         PolygonShape box = new PolygonShape();      // (1) Create the shape.
         box.setAsBox(TILE_SIZE * 3, TILE_SIZE);                 // (2) 1x0.25 meter box.
         fixture = body.createFixture(box, 3);       // (3) Create the fixture.
-        fixture.setUserData("player");              // (4) Set the user data.
+        fixture.setUserData(this);              // (4) Set the user data.
         fixture.setDensity(1f);
         fixture.setRestitution(0f);
         fixture.setFriction(1f);

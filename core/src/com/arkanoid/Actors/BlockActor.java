@@ -1,6 +1,9 @@
 package com.arkanoid.Actors;
 
 import com.arkanoid.Block;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
@@ -20,6 +23,9 @@ import static com.arkanoid.Screens.CuasiConstantes.TILE_SIZE;
 
 public class BlockActor extends Entity{
 
+    private boolean startAnimation = false;
+    private float elapsedTime = 0;
+
     public interface BlockListener{
         void onDeadBlock(BlockActor blockActor);
     }
@@ -29,21 +35,29 @@ public class BlockActor extends Entity{
     }
 
     private TextureRegion texture;
-    private int hardness;
+
     private World world;
     private final Vector2 position;
     private Body body;
     private Fixture fixture;
 
+    private Animation animation;
+    private int hardness;
+    public int getHardness() {
+        return hardness;
+    }
+
     /**
      * Create a single block
      *
      * @param world
+     * @param animation
      */
-    public BlockActor(World world, Vector2 position, TextureRegion texture, int hardness) {
+    public BlockActor(World world, Vector2 position, TextureRegion texture, Animation animation, int hardness) {
         this.world = world;
         this.position = position;
         this.texture = texture;
+        this.animation = animation;
         this.hardness = hardness;
 
         BodyDef def = new BodyDef();
@@ -81,12 +95,28 @@ public class BlockActor extends Entity{
             if(blockListener != null) {
                 blockListener.onDeadBlock(this);
             }
+        } else {
+            startAnimation = true;
+        }
+    }
+
+    public void StartAnimation() {
+        if(!startAnimation) {
+            startAnimation = true;
         }
     }
 
     @Override
     public void draw(Batch batch, float parentAlpha) {
-        batch.draw(texture, getX(), getY(), getWidth(), getHeight());
+        if(startAnimation) {
+            batch.draw(animation.getKeyFrame(elapsedTime += Gdx.graphics.getDeltaTime(), false), getX(), getY(), getWidth(), getHeight());
+            if(animation.isAnimationFinished(elapsedTime)) {
+                elapsedTime = 0;
+                startAnimation = false;
+            }
+        } else {
+            batch.draw(texture, getX(), getY(), getWidth(), getHeight());
+        }
     }
 
     @Override
